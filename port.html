@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+	body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.headers {
+  padding: 60px;
+  text-align: center;
+  background: rgb(126, 44, 44);
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+/* about us css */
+
+#aboutUs {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#aboutUs img {
+    width: 59%;
+    margin: 20px 150px;
+    border-radius: 1px;
+}
+
+.content {
+  margin: 20px 0;
+}
+
+.content h2 {
+  font-size: 50px;
+  color: #ffca70;
+}
+
+.content h4 {
+  font-size: 20px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.description {
+ 
+  margin: 20px 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 100;
+}
+
+.btn {
+  font-weight: bold;
+  border: 2px solid #ffca70;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.4s;
+  background-color: #ffca70;
+}
+
+.btn:hover {
+  border: 2px solid #ffca70;
+  background: transparent;
+  color: #ffca70;
+}
+
+@media screen and (max-width: 790px) {
+  #aboutUs img {
+      width: 80%;
+  }
+
+  #aboutUs {
+      grid-template-columns: 1fr;
+      place-items: center;
+  }
+}
+    .about {
+      margin-top: 40px;
+    }
+    .about h2 {
+      color: #333;
+    }
+    .about p {
+      line-height: 1.6;
+    }
+	.skills-heading{
+		text-align: center;
+    font-size: 47px;
+
+	}
+    .skills {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+	  padding: 26px 128px;
+    }
+    .skills-column {
+      flex: 1;
+    }
+    .skill {
+      margin-bottom: 10px;
+    }
+    .skill-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .skill-bar {
+      width: 70%;
+      background-color: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .skill-bar-inner {
+      height: 20px;
+      background-color: #4CAF50;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+    }
+	/* project css */
+  .image-card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-card {
+    width: 30%; /* Adjust as needed */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+}
+/* ====================== */
+#resume-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.resume-content {
+    margin-bottom: 20px;
+}
+
+.download-button {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+/* =======================contact css========== */
+
+#contact-section {
+    background-color: #f9f9f9;
+    
+    padding: 34px 305px;
+    background-image: url("contact wall.jpg");
+    position: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Adjust alignment as needed */
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 400px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color:white;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.map {
+    flex: 1;
+    margin-left: 20px; /* Adjust spacing as needed */
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* ==============footer========= */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+  padding-top:50px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
+  <div class="headers">
+	<h1>UPASANA KUMARI</h1>
+	<p>WEB DESIGNER</p>
+  </div>
+  <section id="aboutUs">
+	  <img src="myimg.jpeg" alt="computer user">
+	  <div class="content">
+		  <h2>About Us</h2>
+		  <h4> Developer & Designer </h4>
+		  <p class="description">
+			  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+			   when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+			   when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+			   when an unknown printer took 
+			   a galley of type and scrambled it to make a type specimen book
+		  </p>
+		  <button class="btn">READ MORE</button>
+	  </div>
+  </section>
+
+ 
+	<section>
+		<h1 class="skills-heading">MY SKILLS</h1>
+	</section>
+
+    <section class="skills">
+      <div class="skills-column">
+        <h2>Frontend Skills</h2>
+        <div class="skill">
+          <div class="skill-label">HTML</div>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 80%;">80%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-label">CSS</div>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 70%;">70%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-label">JavaScript</div>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 60%;">60%</div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-column">
+        <h2>Backend Skills</h2>
+        <div class="skill">
+          <div class="skill-label">Node.js</div>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 70%;">70%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-label">Express.js</div>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 60%;">60%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-label">MYsql</div>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 50%;">50%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div>
+	<h1 class="skills-heading">MY PROJECT SECTION</h1>
+  <div class="image-card-container">
+    <div class="image-card">
+        <img src="library-management.jpg" alt="Image 1">
+        <div class="card-content">
+            <h2>Library Management System</h2>
+            <p>This is the paragraph for card 1.</p>
+        </div>
+    </div>
+    <div class="image-card">
+        <img src="bank manage.png" alt="Image 2">
+        <div class="card-content">
+            <h2>Bank Management System</h2>
+            <p>This is the paragraph for card 2.</p>
+        </div>
+    </div>
+    <div class="image-card">
+      <img src="library-management.jpg" alt="Image 2">
+      <div class="card-content">
+          <h2>Heading 2</h2>
+          <p>This is the paragraph for card 2.</p>
+      </div>
+  </div>
+    <div class="image-card">
+        <img src="bank manage.png" alt="Image 3">
+        <div class="card-content">
+            <h2>Heading 3</h2>
+            <p>This is the paragraph for card 3.</p>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <section id="resume-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Resume</h2>
+        </div>
+        <div class="resume-content">
+            <p>Your resume content goes here. You can include your experience, education, skills, etc.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              It has survived not only five centuries, but also the leap intoLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              It has survived not only five centuries, but also the leap into  </p>
+           
+        </div>
+        <div class="download-button">
+            <a href="path_to_your_cv.pdf" download class="btn btn-primary">Download CV</a>
+        </div>
+    </div>
+  </section>
+  <section id="contact-section">
+    <div class="contact-details">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="map">
+            <!-- Replace the iframe source with your map embed code -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.254438741624!2dYOUR_LONGITUDE!3dYOUR_LATITUDE!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3AYOUR_PLACE_NAME!2sYOUR_PLACE_NAME!5e0!3m2!1sen!2sus!4v1610389552305!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+<!-- Site footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <p style="color: #bbb;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
+        eget luctus quam orci in velit. </p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy </a></li>
+          <li><a href="#">Contact us</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="#">Phone:+81 37464743848</a></li>
+          <li><a href="#">Email: test@gmail.combag</a></li>
+          <li><a href="#">Address: Mig14 sector,Bhopal</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
